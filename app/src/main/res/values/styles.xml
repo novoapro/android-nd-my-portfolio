@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Main Activity-->
+    <style name="AppTheme.MainActivity" parent="AppTheme">
+        <item name="android:buttonStyle">@style/AppTheme.MainActivity.Button</item>
+    </style>
+
+    <style name="AppTheme.MainActivity.BigLabel">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/big_label_size</item>
+    </style>
+
+
+    <style name="AppTheme.MainActivity.Button" parent="android:Widget.Button">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:paddingTop">@dimen/padding_default</item>
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:paddingLeft">@dimen/padding_half</item>
+        <item name="android:paddingRight">@dimen/padding_half</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="AppTheme.MainActivity.Button.Red" parent="android:Widget.Button">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+</resources>
